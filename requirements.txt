@@ -4,3 +4,4 @@ Pillow
 face_recognition
 fastapi
 pydantic
+uvicorn
