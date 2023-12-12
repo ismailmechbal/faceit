@@ -1,13 +1,10 @@
-from typing import Union
-
+from typing import Optional
 from fastapi import FastAPI
 from pydantic import BaseModel
-
 from generate_face import detect_and_assign_id
 
-
 class FaceModel(BaseModel):
-    name: str
+    name: Optional[str] = None
     url: str
 
 app = FastAPI()
